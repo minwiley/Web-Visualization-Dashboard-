@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Web Visualization Dashboard (Latitude)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- CSS -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="reset.css">
+
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script language="JavaScript" type="text/javascript" src="scripts/jquery.js"></script>
+	<script language="JavaScript" type="text/javascript" src="scripts/bootstrap.min.js"></script>
+	  <!-- Carousel -->
+	<script language="JavaScript" type="text/javascript">
+	  $(document).ready(function(){
+	    $('.carousel').carousel({
+	      interval: 5000
+	    })
+	  });    
+	</script>  
+
+<style>
+  .dropdown-submenu {position: relative;}
+
+  .dropdown-submenu .dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-top: -1px;
+  }
+</style>
+
+</head>
+<body>
+	<div>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+						<a class="navbar-brand" href="index.html">Latitude</a>
+				</div>
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">     
+     			<ul class="nav navbar-nav navbar-right">
+                	<li class="dropdown">
+         				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+	        	<ul class="dropdown-menu">
+		            <li><a href="1_maxtemp.html">Temperature</a></li>
+		            <li><a href="2_hum.html">Humidity</a></li>
+		            <li><a href="3_clouds.html">Cloudiness</a></li>
+		            <li><a href="4_wind.html">Wind Speed</a></li>
+         		</ul> 
+        			</li>
+			        <li><a href="comparison.html">Comparison</a></li>
+			        <li><a href="data.html">Data</a></li>
+     			</ul>
+    		</div>
+  		</div>
+  	</nav>
+</div>
+
+<div class="container">
+<p> Latitude project will analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled from the OpenWeatherMap API to assemble a dataset on over 500 cities. After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualtionzations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+</p> 
+</div>
+
+<div class="container">
+  <div class="row">
+     <div class="col-md-1"></div>  
+     <div class="col-md-6">
+      <h2>Summary:Latitude vs. X</h2>
+
+        <div id="my_carousel" class="carousel slide">
+              <ol class="carousel-indicators">
+                <li data-target = "#my_carousel" data-slide-to = "0" class="active"></li>
+                <li data-target = "#my_carousel" data-slide-to = "1"></li>
+                <li data-target = "#my_carousel" data-slide-to = "2"></li>
+                <li data-target = "#my_carousel" data-slide-to = "3"></li>
+              </ol>
+
+                <div class="carousel-inner i">
+                  <div class="item active">
+                      <article>
+                        <a target="_blank" href="1_maxtemp.html" alt="Max Temperature" class=img-responsive">
+                          <img src="images\Fig1.png" alt="Max Temperature">
+                        </a>
+                          <p><em>Max Temperature</em></p>
+                      </article>
+                  </div>
+
+                  <div class="item">
+                    <article>
+                      <a target="_blank" href="2_hum.html" alt="Humidity" class=img-responsive">
+                      <img src="images\Fig2.png" alt = "Humidity" class="img-responsive">
+                      </a>
+                        <p><em>Humidity</em></p>
+                    </article>
+                  </div>
+
+                  <div class="item">
+                    <article>
+                      <a target="_blank" href="3_clouds.html" alt="Cloudy" class=img-responsive">
+                      <img src="images\Fig3.png" alt = "Cloudy" class="img-responsive">
+                      </a>
+                        <p><em>Cloudy</em></p>
+                    </article>
+                  </div>
+
+                  <div class="item">
+                    <article>
+                      <a target="_blank" href="4_wind.html" alt="Windy" class=img-responsive">
+                      <img src="images\Fig4.png" alt = "Windy" class="img-responsive">
+                      </a>
+                        <p><em>Windy</em></p>
+                    </article>
+                  </div>
+                </div>
+                      <a class="carousel-control left" href="#my_carousel" data-slide = "prev">
+                        <span class="icon-prev left"></span>
+                      </a>
+
+                      <a class="carousel-control right" href="#my_carousel" data-slide = "next">
+                        <span class="icon-next right"></span>
+                      </a>
+              </div>
+     </div>    
+     <div class="col-md-4 sidebar">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Visualizations</h2>
+          </div>
+        </div>
+       <div class="row">
+          <div class="col-md-3">
+             <a target="_blank" href="images\Fig1.png">Max Temperature<img src="images\Fig1.png"></a>
+          </div>
+          <div class="col-md-3"></div>
+        
+          <div class="col-md-3">  
+             <a target="_blank" href="images\Fig2.png">Humidity<img src="images\Fig2.png"></a>
+          </div>
+          <div class="col-md-3"></div>  
+       </div>   
+       <div class ="row"> 
+          
+          <div class="col-md-3">  
+            <a target="_blank" href="images\Fig3.png">Cloudy<img src="images\Fig3.png"></a>
+          </div>
+          <div class="col-md-3"></div>
+
+          <div class="col-md-3">     
+            <a target="_blank" href="images\Fig4.png">Windy<img src="images\Fig4.png"></a>
+          </div>
+          <div class="col-md-3"></div>
+        </div>    
+     </div>         
+    <div class="col-md-1"></div>
+  </div>      
+</div>    
+</body> 
+<html>
+
