@@ -1,6 +1,7 @@
 # Web-Visualization-Dashboard
 
 ## Latitude - Latitude Analysis Dashboard with Attitude
+<img width="326" alt="latitude_ psf" src="https://user-images.githubusercontent.com/41865917/48297182-577bc780-e470-11e8-84eb-a8d67a04658e.png">
 
 For this homework we'll be creating a visualization dashboard website using visualizations we've created in a past assignment. Specifically, we'll be plotting weather data.
 
