@@ -1,6 +1,9 @@
 # Web-Visualization-Dashboard
 
+![lightning](https://user-images.githubusercontent.com/41865917/48297199-b7726e00-e470-11e8-999f-eaaa7c56a62b.png)
+
 ## Latitude - Latitude Analysis Dashboard with Attitude
+
 <img width="326" alt="latitude_ psf" src="https://user-images.githubusercontent.com/41865917/48297182-577bc780-e470-11e8-84eb-a8d67a04658e.png">
 
 For this homework we'll be creating a visualization dashboard website using visualizations we've created in a past assignment. Specifically, we'll be plotting weather data.
@@ -11,6 +14,7 @@ For this homework we'll be creating a visualization dashboard website using visu
   * The website must consist of 7 pages total, including:
 
 ### A landing page containing:
+
 <img width="544" alt="landing_pic" src="https://user-images.githubusercontent.com/41865917/48297123-277ff480-e46f-11e8-94ec-7e03cbac4bb8.PNG">
 
 * An explanation of the project.
@@ -25,12 +29,14 @@ A paragraph describing the plot and its significance.
 Contains all of the visualizations on the same page so we can easily visually compare them.
 Uses a bootstrap grid for the visualizations.
 The grid must be two visualizations across on screens medium and larger, and 1 across on extra-small and small screens.
+
 <img width="628" alt="comparison_pic" src="https://user-images.githubusercontent.com/41865917/48297128-3ff00f00-e46f-11e8-9672-48182cfec2e6.PNG">
 
 ### A "Data" page that:
 Displays a responsive table containing the data used in the visualizations.
 The table must be a bootstrap table component.
 The data must come from exporting the .csv file as HTML, or converting it to HTML. You may use a csv-to-html table conversion tool, e.g. ConvertCSV.
+
 <img width="627" alt="data_pic" src="https://user-images.githubusercontent.com/41865917/48297129-42eaff80-e46f-11e8-962b-4a4e08599d9c.PNG">
 
 The website must, at the top of every page, have a navigation menu that:
